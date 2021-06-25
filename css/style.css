@@ -10,27 +10,11 @@ body {
   }
   
   .container {
-   /* position: absolute; */
     width: 1170px;
-    height: 465px;
     left: 135px;
     top: 1054px;
-    padding-right: 15px;
-    padding-left: 15px;
     margin-left: auto;
     margin-right: auto;
-  
-    @media screen and (min-width: 480px) {
-      width: 480px;
-    }
-  
-    @media screen and (min-width: 768px) {
-      width: 768px;
-    }
-  
-    @media screen and (min-width: 1200px) {
-      width: 1200px;
-    }
   }
   
   img {
@@ -43,14 +27,51 @@ body {
     background: #FBFBFB;
   }
 
+  /*Шапка сайта*/
+  .main-nav {
+    display: flex;
+  }
+
+  .site-nav {
+    display: flex;
+    list-style: none; 
+    padding: 0px;
+    margin-top: 45px;
+  }
+
+  .logo {
+    margin-top: 30px;
+    margin-right: 330px;
+    margin-bottom: 30px;
+  }
+
   .link {
-    font-family: TT Hoves;
+    margin-right: 60px;
     font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 12px;
     letter-spacing: 0.2em;
-    text-align: left;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .link:hover {
+   border-top: 1px solid black;
+    border-bottom: 1px solid black; 
+  }
+
+  /*Герой*/
+  .hero-prog {
+    margin-top: 335px;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: var(--title-color);
+  }
+
+  .hero-home {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 64px;
+    color: var(--link-color);
   }
 
 
