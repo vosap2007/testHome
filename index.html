@@ -48,22 +48,29 @@
 
       <main>
           <!--Герой-->
-      <section>
-        <div class="container">
+      <section class="container">
+        <div class="position">
+          <div class="hero-left">
           <h1 class="hero-prog">
             PROJECT </h1>
             <h1 class="hero-home">
               HOME </h1>
           
-          <button type="button"> &larr; </button>
-          <button type="button"> &rarr; </button>
-          <p data-number>01</p>
-          <p data-number>/</p>
-          <p data-number>02</p>
-
-          <img src=""/>
-          <button class="hero-button" data-modal-open>ВЗГЛЯНУТЬ &rarr;</button>
+          <button class="btn-left" type="button"> &larr; </button>
+          <button class="btn-left" type="button"> &rarr; </button>
+          <div class="counter">
+          <p class="counter-number">01</p>
+          <p class="counter-number">/</p>
+          <p class="counter-number">02</p>
+          </div>
         </div>
+      
+        <div class="contain">
+          <img src="/img/hero.svg" >
+          <button class="btn">ВЗГЛЯНУТЬ &rarr;</button>
+        </img>
+        </div>
+      </div>
       </section>
 
           <!--О компании-->
@@ -82,38 +89,52 @@
           <p class="text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Illum sed optio sint ratione quam atque reiciendis provident 
               dolor vel odio assumenda veritatis eveniet totam, cumque nulla 
+              tenetur possimus consequatur perspiciatis!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Illum sed optio sint ratione quam atque reiciendis provident 
+              dolor vel odio assumenda veritatis eveniet totam, cumque nulla 
               tenetur possimus consequatur perspiciatis!</p>
-         <button class="hero-button" data-modal-open>ЧИТАТЬ &rarr;</button>    
+         <button class="hero-button">ЧИТАТЬ &rarr;</button>    
          </div>
     </div>
     </section>
 
       <!--Основные задачи-->
-      <section>
-          <h2>Основные задачи</h2>
+      <section class="container">
+          <h2 class="tasks-text">Основные задачи</h2>
 
-          <img src="/img/1.svg"/>
-          <p>Создание комфортных условий и повышение качества обслуживания клиентов</p>
+          <div class="tasks">
+          <img class="tasks-img1" src="/img/1.svg"/>
+          <p class="tasks-t">Создание комфортных условий и повышение качества обслуживания клиентов</p>
 
-          <img src="/img/2.svg"/>
-          <p>Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки нового оборудования и усиленной рекламы на рынке</p>
-      </section>
+          <img class="tasks-img2" src="/img/2.svg"/>
+          <p class="tasks-t">Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки нового оборудования и усиленной рекламы на рынке</p>
+      </div>
+    </section>
 
       <!--Наши проекты-->
-      <section>
-
-        <h2>Наши проекты</h2>
-        <img src="/img/image 14.svg"/>
-        <img src="/img/image 15.svg"/>
+      <section class="container">
+        <h2 class="prog-text">Наши проекты</h2>
+        <div class="prog-img">
+        <img style="margin-right: 30px;
+                    margin-bottom: 30px;" 
+                    src="/img/image 14.svg"/>
+        <img style="margin-right: 30px;
+                    margin-bottom: 30px;" 
+                    src="/img/image 15.svg"/></div>
+        <div class="prog-img">
         <img src="/img/image 16.svg"/>
-        <img src="/img/image 17.svg"/>
-        <img src="/img/image 18.svg"/>
+        <img style="margin-left: 30px; 
+                    margin-right: 30px;" 
+                    src="/img/image 17.svg"/>
+        <img src="/img/image 18.svg"/></div>
+        
 
-        <button class="hero-button" data-modal-open>ВСЕ ПРОЕКТЫ &rarr;</button>
+        <button class="prog-button">ВСЕ ПРОЕКТЫ &rarr;</button>
     </section>
 
     <!--Связаться с нами-->
-    <section>
+    <section class="container">
     
         <div class="modal">
           <form class="form">
@@ -196,7 +217,7 @@
     </section>
 
     <!--Футер-->
-    <footer class="footer-backgraund">
+    <footer class="container">
         <div class="container footer">
           <div class="footer-mar">
             <a href="./" class="logo">

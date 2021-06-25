@@ -59,19 +59,83 @@ body {
   }
 
   /*Герой*/
+
+  .position {
+    display: flex;
+    height: 950px;
+  }
+
   .hero-prog {
     margin-top: 335px;
+    margin-bottom: 0px;
+    margin-right: 122px;
     font-weight: 300;
     font-size: 64px;
     line-height: 64px;
     color: var(--title-color);
   }
 
-  .hero-home {
+  .hero-home { 
+    margin: 0px;
+    margin-bottom: 90px;
     font-weight: bold;
     font-size: 64px;
     line-height: 64px;
     color: var(--link-color);
+  }
+
+  .btn-left {
+    width: 53px;
+    height: 53px;
+    border: none;
+    cursor: pointer;
+
+  }
+
+  .btn-left:hover {
+    background-color: var(--link-color);
+    color: rgb(255, 254, 254);
+  }
+
+  .counter {
+    display: flex; 
+  }
+
+  .counter-number {
+    font-size: 24px;
+    color: var(--title-color);
+    margin-right: 30px;
+  }
+
+  .contain {
+    position: relative;
+  }
+  
+  .contain img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .contain .btn {
+    position: absolute;
+    width: 220px;
+    height: 70px;
+    top: 82.7%;
+    left: 14.2%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contain .btn:hover {
+    background-color: var(--link-color);
+    color: rgb(255, 254, 254);
   }
 
 
@@ -101,6 +165,7 @@ body {
   }
 
   .title-company {
+    margin-top: 0px;
     font-weight: 300;
     font-size: 64px;
     line-height: 64px;
@@ -117,5 +182,94 @@ body {
   }
 
   .text-p {
-      
+  margin-right: 70px;
+  margin-bottom: 45px;
+  }
+
+  .hero-button {
+    width: 220px;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    padding: 12px 24px;
+  }
+
+  .hero-button:hover {
+    background-color: var(--link-color);
+    color: rgb(255, 254, 254);
+  }
+
+  /* Основные задачи */
+
+  .tasks {
+    display: flex;
+  }
+
+  .tasks-text {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: var(--title-color);
+  }
+
+  .tasks-img1 {
+    width: 104px;
+    height: 140px;
+    margin-right: 16px;
+  }
+
+  .tasks-img2 {
+    width: 120px;
+    height: 140px;
+    margin-right: 30px;
+    margin-left: 200px;
+  }
+
+  .tasks-t {
+    margin: 0px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 36px;
+    color: #333333;
+  }
+
+  /* Наши проекты */
+
+  .prog-text {
+    margin-top: 100px;
+    margin-bottom: 60px;
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 64px;
+    color: var(--title-color);
+  }
+
+  .prog-img {
+    display: flex;
+  }
+
+  .prog-button {
+    margin-top: 30px;
+    margin-left: 80%;
+    width: 220px;
+    height: 70px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    letter-spacing: 0.2em;
+    padding: 12px 24px;
+  }
+
+  .prog-button:hover {
+    background-color: var(--link-color);
+    color: rgb(255, 254, 254);
   }
