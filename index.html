@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="/font/stylesheet.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="/css/style.css"
+    />
+    <link rel="stylesheet" href="./dist/css/main.min.css" />
+</head>
+<body>
+     <!--Шапка сайта-->
+     <header class="header">
+        <div class="container">
+          <nav class="main-nav">
+            <a href="./" class="logo">
+              <img src="/img/Group 11.svg"/>
+            </a>
+            <div class="menu" data-menu>
+              <ul class="site-nav">
+                <li class="site-link">
+                  <a href="./" class="link current">ГЛАВНАЯ</a>
+                </li>
+                <li class="site-link">
+                  <a href="" class="link">ГАЛЕРЕЯ</a>
+                </li>
+                <li class="site-link">
+                    <a href="" class="link">ПРОЕКТЫ</a>
+                  </li><li class="site-link">
+                    <a href="" class="link">СЕРТИФИКАТЫ</a>
+                  </li>
+                <li class="site-link"><a href="" class="link">КОНТАКТЫ</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>  
+
+      <main>
+          <!--Герой-->
+      <section class="hero overlay">
+        <div class="container">
+          <h1 class="hero-title">
+            PROJECT <br />
+            HOME
+          </h1>
+          <button type="button"> &larr; </button>
+          <button type="button"> &rarr; </button>
+          <p data-number>01</p>
+          <p data-number>/</p>
+          <p data-number>02</p>
+          
+          <img src=""/>
+          <button class="hero-button" data-modal-open>ВЗГЛЯНУТЬ &rarr;</button>
+        </div>
+      </section>
+
+          <!--О компании-->
+      <section class="container background-section">
+          <div class ="company">
+          <div class="fotoBuild">
+              <div class="fotoBuildBlock">
+                 <img class="foto-company1" src="/img/Rectangle 8.svg"/>
+                 <img class="foto-company2" src="/img/Rectangle 10.svg"/>
+              </div>
+          <img class="foto-company3" src="/img/Rectangle 9.svg"/>
+        </div>
+          
+          <div class="text-company">
+          <h2 class="title-company">О компании</h2>
+          <p class="text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Illum sed optio sint ratione quam atque reiciendis provident 
+              dolor vel odio assumenda veritatis eveniet totam, cumque nulla 
+              tenetur possimus consequatur perspiciatis!</p>
+         <button class="hero-button" data-modal-open>ЧИТАТЬ &rarr;</button>    
+         </div>
+    </div>
+    </section>
+
+      <!--Основные задачи-->
+      <section>
+          <h2>Основные задачи</h2>
+
+          <img src="/img/1.svg"/>
+          <p>Создание комфортных условий и повышение качества обслуживания клиентов</p>
+
+          <img src="/img/2.svg"/>
+          <p>Постоянно совершенствовать качество предоставляемых услуг путем обучения персонала, закупки нового оборудования и усиленной рекламы на рынке</p>
+      </section>
+
+      <!--Наши проекты-->
+      <section>
+
+        <h2>Наши проекты</h2>
+        <img src="/img/image 14.svg"/>
+        <img src="/img/image 15.svg"/>
+        <img src="/img/image 16.svg"/>
+        <img src="/img/image 17.svg"/>
+        <img src="/img/image 18.svg"/>
+
+        <button class="hero-button" data-modal-open>ВСЕ ПРОЕКТЫ &rarr;</button>
+    </section>
+
+    <!--Связаться с нами-->
+    <section>
+    
+        <div class="modal">
+          <form class="form">
+            <button data-modal-close class="close-modal">
+              <svg width="20" height="20">
+                <use href="./img/symbol-defs.svg#icon-Vector"></use>
+              </svg>
+            </button>
+  
+            <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+  
+            <div class="form-fild">
+              <input
+                type="name"
+                name="user-name"
+                id="name"
+                class="form-input"
+                placeholder=" "
+                autofocus
+              />
+              <label for="name" class="form-label">Имя</label>
+              <svg class="icon-form">
+                <use href="./img/symbol-defs.svg#icon-person-black"></use>
+              </svg>
+            </div>
+  
+            <div class="form-fild">
+              <input
+                type="tel"
+                name="tel"
+                id="tel"
+                placeholder=" "
+                class="form-input"
+              />
+              <label for="tel" class="form-label">Телефон</label>
+              <svg class="icon-form">
+                <use href="./img/symbol-defs.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+  
+            <div class="form-fild">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder=" "
+                class="form-input"
+              />
+              <label for="email" class="form-label">Почта</label>
+              <svg class="icon-form">
+                <use href="./img/symbol-defs.svg#icon-email-black"></use>
+              </svg>
+            </div>
+  
+            <div class="form-fild">
+              <label for="comment"></label>
+              <textarea
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="10"
+                placeholder="Комментарий"
+              ></textarea>
+            </div>
+  
+            <div class="form-checkbox">
+              <label class="checkbox-label">
+                <input class="checkbox" type="checkbox" name="topic" value="tx" />
+                <span class="icon-checkbox"></span>
+                Соглашаюсь с рассылкой и принимаю
+                <a href="" class="link-form">Условия договора</a>
+              </label>
+            </div>
+  
+            <div class="form-but">
+              <button class="form-button" type="submit">Отправить</button>
+            </div>
+          </form>
+        </div>
+    </section>
+
+    <!--Футер-->
+    <footer class="footer-backgraund">
+        <div class="container footer">
+          <div class="footer-mar">
+            <a href="./" class="logo">
+              <span class="logo-web">Web </span>
+              <span class="logo-studio inversia">Studio</span>
+            </a>
+  
+            <address class="footer-address">
+              <span>г. Киев, пр-т Леси Украинки, 26</span>
+              <span class="footer-contact">info@example.com</span>
+              <span class="footer-contact">+38 099 111 11 11</span>
+            </address>
+          </div>
+          <div class="footer-marrite">
+            <p class="footer-call">ПРИСОЕДИНЯЙТЕСЬ</p>
+            <ul class="social">
+              <li class="circle">
+                <a href="" aria-label="Ссылка на Instagram">
+                  <svg width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="circle">
+                <a href="" aria-label="Ссылка на Twitter">
+                  <svg width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-tvitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="circle">
+                <a href="" aria-label="Ссылка на Facebook">
+                  <svg width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="circle">
+                <a href="" aria-label="Ссылка на Linkedin">
+                  <svg width="20" height="20">
+                    <use href="./img/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+  
+          <div class="subscription">
+            <p class="text-subscription">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+            <form class="subscription-border">
+              <div class="flex">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  class="flex-email"
+                />
+                <div class="submit-button">
+                  <button class="subscription-button" type="submit">
+                    Подписаться
+                    <svg class="icon-button">
+                      <use href="./img/symbol-defs.svg#icon-icon-send"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </footer>
+      </main>
+</body>
+</html>
