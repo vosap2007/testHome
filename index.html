@@ -168,17 +168,10 @@
     <!--Связаться с нами-->
     <section class="container">
       <h2 class="prog-text">Связаться с нами</h2>
-    
+       
+      <div class="pos">
         <div class="modal">
           <form class="form">
-            <button data-modal-close class="close-modal">
-              <svg width="20" height="20">
-                <use href="./img/symbol-defs.svg#icon-Vector"></use>
-              </svg>
-            </button>
-  
-            <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
-  
             <div class="form-fild">
               <input
                 type="name"
@@ -189,11 +182,7 @@
                 autofocus
               />
               <label for="name" class="form-label">Имя</label>
-              <svg class="icon-form">
-                <use href="./img/symbol-defs.svg#icon-person-black"></use>
-              </svg>
             </div>
-  
             <div class="form-fild">
               <input
                 type="tel"
@@ -202,24 +191,27 @@
                 placeholder=" "
                 class="form-input"
               />
-              <label for="tel" class="form-label">Телефон</label>
-              <svg class="icon-form">
-                <use href="./img/symbol-defs.svg#icon-phone-black"></use>
-              </svg>
+              <label for="tel" class="form-label">Номер телефона*</label>
             </div>
-  
             <div class="form-fild">
               <input
-                type="email"
-                name="email"
-                id="email"
+                type="product"
+                name="product"
+                id="product"
                 placeholder=" "
                 class="form-input"
               />
-              <label for="email" class="form-label">Почта</label>
-              <svg class="icon-form">
-                <use href="./img/symbol-defs.svg#icon-email-black"></use>
-              </svg>
+              <label for="email" class="form-label">E-mail*</label>
+            </div>
+            <div class="form-fild">
+              <input
+                type="product"
+                name="product"
+                id="product"
+                placeholder=" "
+                class="form-input"
+              />
+              <label for="product" class="form-label">Итересующий товар/услуга</label>
             </div>
   
             <div class="form-fild">
@@ -229,7 +221,7 @@
                 id="comment"
                 cols="30"
                 rows="10"
-                placeholder="Комментарий"
+                placeholder="Сообщение*"
               ></textarea>
             </div>
   
@@ -237,35 +229,62 @@
               <label class="checkbox-label">
                 <input class="checkbox" type="checkbox" name="topic" value="tx" />
                 <span class="icon-checkbox"></span>
-                Соглашаюсь с рассылкой и принимаю
-                <a href="" class="link-form">Условия договора</a>
-              </label>
+               <p> Отправляя заявку Вы соглашаетесь с политикой конфиденциальности 
+              </p>
+            </label>
             </div>
   
             <div class="form-but">
-              <button class="form-button" type="submit">Отправить</button>
+              <button class="form-button" type="submit">ОТПРАВИТЬ &rarr;</button>
             </div>
           </form>
         </div>
+
+        <img class="form-img" src="/img/image 12.png" />
+      </div>
     </section>
 
     <!--Футер-->
-    <footer class="container">
-        <div class="container footer">
-          <div class="footer-mar">
-            <a href="./" class="logo">
-              <span class="logo-web">Web </span>
-              <span class="logo-studio inversia">Studio</span>
+    <footer>
+        <div class="footer">
+          
+          <div class="footer-logo">
+            <a href="./">
+              <img class="logo-img" src="/img/logo-footer.png"/>
             </a>
-  
+          </div>
+
+            <ul class="site-nav-footer">
+              <p class="info">Информация</p>
+              <li class="decor">
+                <a href="./" class="link-footer">Главная</a>
+              </li>
+              <li class="decor">
+                <a href="" class="link-footer">Галерея</a>
+              </li>
+              <li class="decor">
+                  <a href="" class="link-footer">Проекты</a>
+                </li>
+                <li class="decor">
+                  <a href="" class="link-footer">Сертификаты</a>
+                </li>
+              <li class="decor">
+                <a href="" class="link-footer">Контакты</a>
+              </li>
+            </ul>
+
+        <div class="address">
             <address class="footer-address">
-              <span>г. Киев, пр-т Леси Украинки, 26</span>
+              <span class="info">Контакты</span>
+              <span class="footer-contact">г. Киев, пр-т Леси Украинки, 26</span>
               <span class="footer-contact">info@example.com</span>
               <span class="footer-contact">+38 099 111 11 11</span>
             </address>
           </div>
+          
+
           <div class="footer-marrite">
-            <p class="footer-call">ПРИСОЕДИНЯЙТЕСЬ</p>
+            <p class="info">Социальные сети</p>
             <ul class="social">
               <li class="circle">
                 <a href="" aria-label="Ссылка на Instagram">
@@ -297,29 +316,11 @@
               </li>
             </ul>
           </div>
-  
-          <div class="subscription">
-            <p class="text-subscription">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-            <form class="subscription-border">
-              <div class="flex">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="E-mail"
-                  class="flex-email"
-                />
-                <div class="submit-button">
-                  <button class="subscription-button" type="submit">
-                    Подписаться
-                    <svg class="icon-button">
-                      <use href="./img/symbol-defs.svg#icon-icon-send"></use>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-            </form>
-          </div>
         </div>
+        <div class="line"></div>
+        <div class="line-bot">
+          <span class="final">© 2019 Digital Project. Все права защищены.</span>
+        </div>  
       </footer>
       </main>
 </body>

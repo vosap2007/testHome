@@ -11,8 +11,7 @@ body {
   
   .container {
     width: 1170px;
-    left: 135px;
-    top: 1054px;
+    
     margin-left: auto;
     margin-right: auto;
   }
@@ -242,6 +241,10 @@ body {
 
   /* Наши проекты */
 
+  .itom {
+    margin: 15px;
+  }
+
   .prog-text {
     margin-top: 100px;
     margin-bottom: 60px;
@@ -340,39 +343,16 @@ body {
 
 /* Связаться с нами */
 
-textarea {
-  resize: none;
-}
-
-.form {
-  background: #ffffff;
-  -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-}
-
-@media (max-width: 1199px) {
   .form {
-    max-width: 450px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
-    padding-top: 8px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .form {
-    width: 528px;
-    padding-left: 40px;
+    width: 390px;
+    padding-left: 0px;
     padding-right: 40px;
     padding-top: 7px;
     padding-bottom: 40px;
   }
-}
 
 .form-fild {
-  margin-bottom: 28px;
+  margin-bottom: 25px;
   position: relative;
 }
 
@@ -380,38 +360,34 @@ textarea {
   width: 100%;
   margin: 0;
   padding: 12px 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: #F3F3F3;
+  border: 1px solid rgba(33, 33, 33, 0);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
 }
 
 .form-fild:focus input {
-  border: 1px solid #2196f3;
+  border: 1px solid #33333300;
 }
 
 .form-fild textarea {
+  width: 100%;
   margin: 0;
   padding: 12px 16px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  border: 1px solid rgba(33, 33, 33, 0);
+  background-color: #F3F3F3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
 }
 
-@media (min-width: 1200px) {
-  .form-fild textarea {
-    width: 448px;
-    height: 120px;
-  }
-}
-
 .form-text {
   font-weight: bold;
-  font-size: 20px;
-  line-height: 23px;
+  font-size: 10px;
+line-height: 17px;
+letter-spacing: 0.04em;
   text-align: center;
-  letter-spacing: 0.03em;
   margin-top: 0px;
   margin-bottom: 30px;
   color: #212121;
@@ -432,9 +408,9 @@ textarea {
 }
 
 .checkbox:checked + .icon-checkbox {
-  background-color: #2196f3;
-  border-color: #2196f3;
-  background-image: url("../img/Vector.svg");
+  background-color: #d8dde000;
+  border-color: #a1a1a100;
+  background-image: url("/img/tick.png");
   background-size: contain;
   background-origin: border-box;
 }
@@ -461,11 +437,10 @@ textarea {
   width: 16px;
   height: 15px;
   margin-right: 7px;
-  border: 2px solid #212121;
+  border: 2px solid #d4d4d4;
   border-radius: 4px;
 }
 
-@media (min-width: 1200px) {
   .checkbox-label {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -474,11 +449,10 @@ textarea {
         -ms-flex-align: center;
             align-items: center;
   }
-}
 
 .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
-  color: #2196f3;
+  color: #000000;
   -webkit-transform: translateY(-45px) translateX(-30px);
           transform: translateY(-45px) translateX(-30px);
 }
@@ -495,38 +469,36 @@ textarea {
   transition: transform 250ms linear, -webkit-transform 250ms linear;
 }
 
-.icon-form {
-  position: absolute;
-  top: 12px;
-  left: 16px;
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-}
 
-.form-input:focus ~ .icon-form {
-  --color3: #2196f3;
-}
-
-.form-button {
+.form-button {font-size: 14px;
+line-height: 17px;
+letter-spacing: 0.04em;
   width: 200px;
   height: 50px;
-  padding: 10px 29px;
+  padding: 12px 24px;
   font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  border: none;
+  cursor: pointer;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  letter-spacing: 0.06em;
   color: #ffffff;
-  background: #2196f3;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  background: #4b4b4b;
+  
 }
 
+.form-button:hover {
+color: rgb(0, 0, 0);
+background: #ffffff;
+}
+
+
 .link-form {
-  color: #2196f3;
+  color: #828283;
+  margin-left: 5px;
 }
 
 .form-but {
@@ -536,4 +508,139 @@ textarea {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.pos {
+  display: flex;
+}
+
+.form-img {
+  width: 749px;
+  height: 369px;
+}
+
+/*Футер*/
+
+.footer {
+background: #2C2C2C;
+display: flex;
+}
+
+.logo-img {
+margin-top: 60px;
+margin-right: 120px;
+margin-left: 116px;
+}
+
+.info {
+  margin-top: 60px;
+  margin-bottom: 25px;
+  font-size: 16px;
+line-height: 20px;
+color: #FFFFFF;
+}
+
+.link-footer {
+  font-weight: 500;
+font-size: 14px;
+line-height: 24px;
+  margin-bottom: 25px;
+  color: #FFFFFF;
+  
+  text-decoration: none;
+}
+
+.decor {
+  list-style: none;
+}
+
+.address {
+margin-left: 165px;
+}
+
+.footer-marrite {
+  margin-left: 155px;
+}
+
+.footer-contact {
+  margin-bottom: 30px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #FFFFFF;
+}
+
+.footer-backgraund {
+  background: #2f303a;
+}
+
+.social {
+  display: flex;
+  padding: 0px;
+}
+
+.footer-address {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+}
+
+  .footer-mar {
+    margin-right: 69px;
+    margin-left: 0px;
+  }
+
+.circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-size: contain;
+  margin-right: 15px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 250ms;
+          transition-duration: 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.circle:hover {
+  background: var(--link-color);
+  --color3: #ffffff;
+}
+
+.site-nav-footer {
+  margin-top: 0px;
+  display: block;
+}
+
+.line {
+  border-top: 2px solid rgb(58, 58, 58);
+}
+
+.line-bot {
+  height: 75px;
+  background: #2C2C2C;
+}
+
+.final {
+  font-size: 12px;
+line-height: 22px;
+padding-top: 25px;
+    padding-left: auto;
+    padding-left: 40%;
+display: flex;
+align-items: center;
+color: rgba(200, 200, 200, 0.5);
 }
